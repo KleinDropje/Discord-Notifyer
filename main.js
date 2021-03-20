@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 
 const ping = require("minecraft-server-util");
 
-const token = "ODIyNTQ4MDQ1MzM2OTM2NDQ5.YFT3kA.pghUIHsTE7vLuyN8tS1m-DLoAho";
+const token = "add your token here";
 
 const prefix = "!";
 
