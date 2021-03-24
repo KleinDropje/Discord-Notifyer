@@ -1,12 +1,8 @@
 const Discord = require("discord.js");
-
 const bot = new Discord.Client();
-
-const ping = require("minecraft-server-util");
-
 const token = "add your token here";
 
-const prefix = "!";
+const prefix = "!n ";
 
 bot.on("ready", () => {
   console.log("Bot has come online.");
@@ -16,7 +12,7 @@ bot.on("message", (message) => {
   let args = message.content.split(" ");
 
 
-  if (message.content.startsWith(prefix + "N help")) {
+  if (message.content.toLowerCase().startsWith(prefix + "help")) {
     const Embed = new Discord.MessageEmbed()
     .setColor("#C86A56")
     .setTitle("N create")
@@ -29,7 +25,7 @@ bot.on("message", (message) => {
 
   }
   //Create Memory
-  if (message.content.startsWith(prefix + "N create")) {
+  if (message.content.toLowerCase().startsWith(prefix + "create")) {
     message.channel
       .send(`What would you like to call your appointment ?`)
       .then(() => {
